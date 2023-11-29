@@ -1,16 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-// Początkowy stan dla reduktora filtrów.
 const filtersInitialState = { filter: '' };
 
-// Utworzenie reduktora za pomocą createSlice z Redux Toolkit.
 const filtersSlice = createSlice({
   name: 'filters',
-  initialState: filtersInitialState, // Początkowy stan reduktora.
+  initialState: filtersInitialState, 
   reducers: {
-    // Definicja akcji filterContact, która aktualizuje wartość filtru w stanie.
     filterContact(state, action) {
-      state.filter = action.payload; // Aktualizacja wartości filtru na podstawie przekazanego payloadu z akcji.
+      state.filter = action.payload;
     },
   },
 });
