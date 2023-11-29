@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 const ContactList = ({ contacts, onDeleteContact }) => (
   <>
-  {/* Mapowanie listy kontaktów do elementów JSX. */}
     {contacts.map((contact) => (
       <div key={contact.id}>
         <span className={css.mobileIcon}>📳</span>
